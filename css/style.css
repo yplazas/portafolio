@@ -1,0 +1,245 @@
+:root {
+    --white: #ffffff;
+    --primary: #e2f4f1;
+    --secondary: #2b554e;
+    --tercero: #1BF2DF;
+    --tittle: #457f76;
+    --letter: #3b3b3b;
+
+}
+
+
+
+body {
+    background: var(--primary);
+    color: var(--letter);
+    font-family: "Reddit Mono", monospace;
+    font-style: normal;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--tittle);
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/*  Navigation Bar */
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 40px 10%;
+    height: auto;
+}
+
+
+.nav__enlaces {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__enlaces a {
+    color: var(--tittle);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.nav__enlaces a:hover {
+    background-color: var(--tercero);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.nav__container svg {
+    transition: 0.5s;
+}
+
+.nav__container svg:hover {
+    transform: scale(1.3);
+}
+
+/* seccion inicio */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 10% 110px;
+}
+
+.inicio__info {
+    width: 50%;
+}
+
+.inicio__info h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.inicio__info h3 {
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.inicio__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    border: 3px solid var(--white);
+    background-color: var(--tercero);
+}
+
+.inicio__photo img {
+    height: 90%;
+    width: 70%;
+    transition: 1s;
+}
+
+.inicio__photo img:hover {
+    transform: scale(1.07);
+}
+
+/* sobre mi */
+
+.sobre-mi {
+    background-color: var(--white);
+    height: auto;
+    padding: 40px 10%;
+}
+
+.sobre-mi h2 {
+
+    margin-bottom: 40px;
+
+}
+
+
+.sobre-mi__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+
+/* skills */
+/* .skills {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.skills__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.skills__info p {
+    color: var(--tittle);
+    font-weight: bold;
+}
+
+.skills__card {
+    width: 100%;
+    height: 400px;
+    background-color: #faf7f8;
+    border-radius: 15px;
+    border: 1px solid var(--tittle);
+}
+
+.skills__card:nth-child(1) {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skills__card:nth-child(1) img {
+    height: 400px;
+    width: 400px;
+}
+
+
+.skills__card:nth-child(4) {
+    grid-column: 2 / 4;
+} */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--tittle);
+}
+
+.footer__redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media svg {
+    transition: 0.5s;
+}
+
+.social-media svg:hover {
+    transform: scale(1.3);
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__copyright p {
+    font-size: 17px;
+}
